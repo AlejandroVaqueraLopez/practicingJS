@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+//nombres de variables y funciones se van hasta arriba por hoisting con undefined como valor predeterminado
+
+//en este caso, mandamos a llamar la funcion antes de asignar valor a variable y nos devuelve "Hola undefined"
+
+        saludo();
+        var nam = "Aaron";
+
+        function saludo() {
+            console.log("Hola " + nam);
+        }
+
+    </script>
+</body>
+</html>

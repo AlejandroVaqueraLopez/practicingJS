@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var cont = 0;
+        for(cont = 0; cont <= 5; cont++){
+            console.log(cont);
+            if(cont == 2){
+                break;//rompe ciclo
+            }
+        }
+
+        cont = 0;
+
+        for(cont = 0; cont <= 5; cont++){
+            if(cont == 2){
+                continue;//salta 1 iteracion
+            }
+            console.log(cont);
+        }
+
+    </script>
+</body>
+</html>

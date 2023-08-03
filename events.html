@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="myId" type="text"/>
+
+    <script>
+
+        let element = document.getElementById("myId");
+
+        element.addEventListener("keyup", received);
+
+        function received(e){
+            console.log(e.key);//letra presionada
+            console.log(String.fromCharCode(e.keyCode));//codigo de letra convertida a string
+        }
+
+    </script>
+</body>
+</html>

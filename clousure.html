@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ejemplo 1 clousure
+        let stFn = function(){
+            let name = "hola";
+
+            let ndFn = function(){
+                return ("siempre digo  " + name);
+            }
+            return ndFn;
+        }
+
+        let executer = stFn();
+        console.log(executer());
+
+        //ejemplo 2 clousure
+        let rdFn = function(){
+            let name = "hola";
+
+            return function(){
+                return ("siempre digo  " + name);
+            }
+        }
+
+        let ndExecuter = rdFn();
+        console.log(ndExecuter());
+    </script>
+    
+</body>
+</html>
