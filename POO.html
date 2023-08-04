@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //CLASS forma ecmascript
+        function Padre(nombre){
+            this.nombre = nombre;//public property
+            let privateProperty = "holaa";//private property
+            this.publicMethod = function(value){//public method
+                return (value + this.nombre);
+            }
+
+            function privateMethod(){
+                return "jijija";
+            }
+        }
+
+        function Hijo(nombreHijo){
+            Padre.call(this, nombreHijo);
+            this.name = "alex";
+        }
+
+        
+
+        Hijo.prototype = new Padre();//herencia
+
+        let sonInstance = new Hijo("sonName");
+        console.log(sonInstance.publicMethod("sssoooon "));
+
+
+        Padre.staticProperty = 23;
+
+        console.log(Padre.staticProperty);
+
+        Padre.calc = function(val, vale){//static method
+            return val + vale;
+        }
+
+        let Alejandro = new Padre("alejandro");
+        console.log(Alejandro.privateProperty);
+
+        console.log(Padre.calc(2,3));
+
+        console.log(Padre.calc(2,3));
+
+        console.log(Alejandro.publicMethod("hell"));
+
+        //console.log(Alejandro.privateMethod());
+
+
+
+
+    </script>
+</body>
+</html>

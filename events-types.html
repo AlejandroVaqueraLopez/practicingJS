@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        button {
+            height: 100px;
+            width: 100px;
+            color: white;
+            background: indianred;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="stBtn"></button>
+    <input type="text" id="stInput"></button>
+
+    <script>
+        //VARIABLES 
+        let myBtn = document.getElementById("stBtn");
+        let myInput = document.getElementById("stInput");
+
+        //FUNCTIONS
+        function clickMe(event){
+            console.log(event.type);
+        }
+
+        function modifier(event){
+            event.target.style.backgroundColor = "black";
+        }
+
+
+        //EVENTS
+        //click event
+        myBtn.addEventListener("click", function(event){
+            clickMe(event);
+        });
+
+        //blur
+        myBtn.addEventListener("blur", function(event){
+            clickMe(event);
+        });
+
+        //change event !
+        myBtn.addEventListener("change", function(event){
+            clickMe(event);
+        });
+
+        //double click event
+        myBtn.addEventListener("dblclick", function(event){
+            clickMe(event);
+        });
+
+        //focus event
+        myBtn.addEventListener("focus", function(event){
+            clickMe(event);
+        });
+
+        //key down event
+        myInput.addEventListener("keydown", function(event){
+            clickMe(event);
+        });
+
+        //key press event
+        myInput.addEventListener("keypress", function(event){
+            clickMe(event);
+        });
+
+        //key up event
+        myInput.addEventListener("keyup", function(event){
+            clickMe(event);
+        });
+
+        //load event !
+        myBtn.addEventListener("load", function(event){
+            clickMe(event);
+        });
+
+        //mouse down event
+        myBtn.addEventListener("mousedown", function(event){
+            clickMe(event);
+        });
+
+        //mouse up event
+        myBtn.addEventListener("mouseup", function(event){
+            clickMe(event);
+        });
+
+        //mouse move event
+        myBtn.addEventListener("mousemove", function(event){
+            clickMe(event);
+        });
+
+        //mouse out event
+        myBtn.addEventListener("mouseout", function(event){
+            clickMe(event);
+        });
+
+        //mouse over event
+        myBtn.addEventListener("mouseover", function(event){
+            clickMe(event);
+        });
+
+        //resize event (using window global object)
+        window.addEventListener("resize", function(event){
+            clickMe(event);
+        })
+
+        //
+        window.addEventListener("resize", function(event){
+            clickMe(event);
+        })
+
+
+
+    </script>
+    
+</body>
+</html>

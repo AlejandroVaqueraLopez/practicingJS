@@ -33,6 +33,125 @@
 
         console.log(thirdArray["hola"]);
 
+        //METHODS
+        let myNewArray = [1, 2, 10, 3, 5, 7, 8, 9, 10];
+        console.log(myNewArray);
+        
+        //pop
+        console.log("pop");
+        myNewArray.pop();
+        console.log(myNewArray);
+
+        //concat
+        let variable = "hola";
+        let vari = "hi";
+        console.log("concat");
+        myNewArray.concat(variable, vari);
+        console.log(myNewArray);
+
+        //reverse
+        console.log("reverse");
+        myNewArray.reverse();
+        console.log(myNewArray);
+
+        //join
+        console.log("join");
+        console.log(myNewArray.join("-"));
+
+        //push
+        console.log("push");
+        myNewArray.push("hola");
+        console.log(myNewArray);
+
+        //shift
+        console.log("shift");
+        myNewArray.shift();
+        console.log(myNewArray);
+
+        //unshift
+        console.log("unshift");
+        myNewArray.unshift("first");
+        console.log(myNewArray);
+
+        //length
+        console.log("length");
+        console.log(myNewArray.length);
+
+        //sort
+        console.log("sort");
+        myNewArray.sort()
+        console.log(myNewArray);
+
+        //sort modified
+        console.log("sort modified");
+        myNewArray.sort(function(a, b){
+            return a - b;
+        })
+        console.log(myNewArray);
+
+        //find
+        console.log("find");
+        myNewArray.find(function(item) {
+            if(item == 1){
+                console.log("find 1");
+            }
+        })
+
+        //findIndex
+        console.log("findIndex");
+        console.log(myNewArray.findIndex((item) => item == "3"));
+
+        //findIndex
+        console.log("includes");
+        console.log(myNewArray.includes("hola"));
+
+        //slice
+        console.log("slice");
+        console.log(myNewArray.slice(2,6));
+
+        //splice
+        console.log("splice");
+        console.log(myNewArray.splice(4,1));
+        console.log(myNewArray);
+
+        //toString
+        console.log("toString");
+        console.log(myNewArray.toString());
+
+        //some
+        console.log("some");
+        console.log(myNewArray.some(function(item){
+            return item > 5;
+        }));
+
+        //every
+        console.log("every");
+        console.log(myNewArray.every(function(item){
+            return item > 5;
+        }));
+
+        //filter
+        console.log("filter");
+        console.log(myNewArray.filter(function(item){
+            return item > 5;
+        }));
+
+        //filter
+        console.log("filter");
+        console.log(myNewArray.filter(function(item){
+            return item > 5;
+        }));
+
+        //Array.isArray()
+        console.log("is Array");
+        console.log(Array.isArray(myNewArray));
+
+
+        //Array.from()
+        
+        console.log("Array.from()");
+        let res = Array.from("alex");
+        console.log(res);
 
     </script>
 </body>
